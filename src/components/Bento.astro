@@ -6,11 +6,11 @@ import BentoItem from "./BentoItem.astro";
   class={`
     w-full max-w-[1400px]
     grid lg:grid-cols-10 auto-rows-[30rem] gap-4
-    mx-auto p-6 md:p-12 lg:p-20
+    mx-auto 
   `}
 >
   <BentoItem 
-  class="col-span-10 lg:col-span-4 " 
+  class="col-span-10 lg:col-span-4 flex flex-col justify-center items-center" 
   title="Dinamic React Form"
   subSubtitle="Componente de React para crear formularios dinamicos"
   descripcion="Especialmente diseñado para elaborar planes de entrenamiento y nutricion estructurados en bloques"
@@ -21,7 +21,6 @@ import BentoItem from "./BentoItem.astro";
       class="background transition-scale absolute bottom-0 left-0 top-0
         -z-10 h-full w-full bg-blue-950
         bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      data-src="/mountain.webp"
     >
     </div>
 
@@ -52,7 +51,7 @@ import BentoItem from "./BentoItem.astro";
   <BentoItem
     class="col-span-10 lg:col-span-6"
     title="Creado Desde Cero"
-    subtitle="De Extension Variable"
+    subtitle="Con React y Javascript"
   >
     <div
       slot="image"

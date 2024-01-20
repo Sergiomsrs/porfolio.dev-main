@@ -1,42 +1,42 @@
 ---
-import Layout from "@/layouts/Layout.astro"
+import Layout from "@/layouts/Layout.astro";
 
-import AboutMe from "@/components/AboutMe.astro"
-import Badge from "@/components/Badge.astro"
-import Briefcase from "@/components/icons/Briefcase.astro"
-import CodeIcon from "@/components/icons/Code.astro"
-import Experience from "@/components/Experience.astro"
-import GitHubIcon from "@/components/icons/GitHub.astro"
-import LinkedInIcon from "@/components/icons/LinkedIn.astro"
-import MailIcon from "@/components/icons/Mail.astro"
-import ProfileCheck from "@/components/icons/ProfileCheck.astro"
-import Projects from "@/components/Projects.astro"
-import SectionContainer from "@/components/SectionContainer.astro"
-import SocialPill from "@/components/SocialPill.astro"
-import Bento from "@/components/Bento.astro"
+import AboutMe from "@/components/AboutMe.astro";
+import Badge from "@/components/Badge.astro";
+import Briefcase from "@/components/icons/Briefcase.astro";
+import CodeIcon from "@/components/icons/Code.astro";
+import Experience from "@/components/Experience.astro";
+import GitHubIcon from "@/components/icons/GitHub.astro";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import MailIcon from "@/components/icons/Mail.astro";
+import ProfileCheck from "@/components/icons/ProfileCheck.astro";
+import Projects from "@/components/Projects.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import SocialPill from "@/components/SocialPill.astro";
+import Bento from "@/components/Bento.astro";
+import Trayectoria from "@/components/icons/Trayectoria.astro";
 ---
 
 <Layout
   title="Porfolio de Sergio Mendez"
-  description="Contrata a midudev para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas."
+  description="Porfolio de Sergio Mendez"
 >
   <main class="px-4">
     <SectionContainer class="py-44 pb-32">
       <img
-        class="rounded-full size-12 mb-4"
-        src="/midudev.webp"
-        alt="midudev photo"
+        class="rounded-full size-16 mb-4"
+        src="/sergio.webp"
+        alt="sergio photo"
       />
       <h1
         class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
-        Hey, bienvenido a mi porfolio <a
-          href="https://linkedin.com/in/midudev"
+        Hey, mi nombre es Sergio <a
+          href="https://www.linkedin.com/in/sergio-mendez-soler-03902aa5/"
           target="_blank"
           rel="noopener"
           class="flex justify-center items-center hover:scale-105 transition"
         >
-          <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
       <h2
@@ -45,28 +45,28 @@ import Bento from "@/components/Bento.astro"
         <span>Estudiante de DAM.</span><span
           class="text-yellow-800 dark:text-yellow-200"
         >
-          Desarrollador Web y Creador de Contenido</span
+          Desarrollador Frontend con React y Backend con Java y Springboot </span
         >
         .<span class="text-red-800 dark:text-red-200">
-          De Barcelona, España</span
+          De Murcia, España</span
         >.
         <span class="text-sky-800 dark:text-sky-200"
-          >Especializado en crear aplicaciones únicas.</span
+          >Siempre explorando diferentes tecnologias y lenguajes.</span
         >
       </h2>
 
       <nav class="flex gap-4 mt-8 flex-wrap">
-        <SocialPill href="https://linkedin.com/in/midudev">
+        <SocialPill href="https://www.linkedin.com/in/sergio-mendez-soler-03902aa5/">
           <LinkedInIcon class="size-4 md:size-6" />
           LinkedIn
         </SocialPill>
-        <SocialPill href="https://github.com/midudev">
+        <SocialPill href="https://github.com/sergiomsrs">
           <GitHubIcon class="size-4 md:size-6" />
           GitHub
         </SocialPill>
         <SocialPill href="mailto:miduga@gmail.com">
           <MailIcon class="size-4 md:size-6" />
-          miduga@gmail.com
+          sergiomsrs@gmail.com
         </SocialPill>
       </nav>
     </SectionContainer>
@@ -75,8 +75,8 @@ import Bento from "@/components/Bento.astro"
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
-        <Briefcase class="size-7" />
-        Experiencia laboral
+        <Trayectoria class="size-7" />
+        Mi Trayectoria 
       </h2>
       <Experience />
     </SectionContainer>
@@ -88,14 +88,14 @@ import Bento from "@/components/Bento.astro"
         <CodeIcon class="size-7" />
         Proyectos
       </h2>
-      <Projects title="SVGL - A beautiful library with SVG logos",
-      description="Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-      link="https://svgl.vercel.app/",
-      github="https://github.com/pheralb/svgl",
-      image="/projects/svgl.webp", />
+      <Projects
+        title="React Component - Formulario dinaminco de extension variable"
+        ,
+        description="Formulario diseñado desde cero con React para la elaboracion de planes nutricionales y de entrenamiento. Sigue una estructura de bloques e items que se pueden añadir o eliminar a gusto del usuario. Especialmente diseñado para poder implementar el analisis estadistico de los planes elaborados."
+        ,
+      />
+      <Bento />
     </SectionContainer>
-
-    <Bento/>
 
     <SectionContainer id="sobre-mi">
       <h2
