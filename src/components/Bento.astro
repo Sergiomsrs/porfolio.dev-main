@@ -10,29 +10,24 @@ import BentoItem from "./BentoItem.astro";
   `}
 >
   <BentoItem 
-  class="col-span-10 lg:col-span-4 flex flex-col justify-center items-center" 
+  class="col-span-10 lg:col-span-4" 
   title="Dinamic React Form"
-  subSubtitle="Componente de React para crear formularios dinamicos"
-  descripcion="Especialmente diseñado para elaborar planes de entrenamiento y nutricion estructurados en bloques"
+  subSubtitle="Diseñado para elaborar planes de entrenamiento y nutricion estructurados en bloques"
   >
 
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full bg-blue-950
+        -z-10 h-full w-full bg-purple-950 bg-opacity-90
         bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
     >
     </div>
 
-    <p
-      slot="content"
-      class="max-w-xl text-base md:text-lg"
-    />
   </BentoItem>
   <BentoItem
     class="col-span-10 lg:col-span-6"
-    title="Diseña tus planes de entrenamiento y nutricion"
-    subtitle="Podras añadir tantos bloques como quieras"
+    title="Elabora tus sesiones"
+    subtitle="Añade tantos bloques e items como quieras"
   >
     <div
       slot="image"
@@ -42,11 +37,7 @@ import BentoItem from "./BentoItem.astro";
       style="background-image: url('/public/projects/principal.webp')"
     >
     </div>
-    <p
-      slot="content"
-      class="max-w-xl text-base md:text-lg"
-      
-    />
+
   </BentoItem>
   <BentoItem
     class="col-span-10 lg:col-span-6"
@@ -61,12 +52,8 @@ import BentoItem from "./BentoItem.astro";
         style="background-image: url('/public/projects/primaria.webp')"
     >
     </div>
-    <p
-      slot="content"
-      class="max-w-xl text-base md:text-lg"
-    />
   </BentoItem>
-  <BentoItem class="col-span-10 lg:col-span-4" title="Estructura JSON" subSubtitle="Data Analitics">
+  <BentoItem class="col-span-10 lg:col-span-4" title="Estructura JSON" subtitle="Data Analytics">
     <div
       slot="image"
       class="background transition-scale absolute bottom-0 left-0 top-0
@@ -75,9 +62,5 @@ import BentoItem from "./BentoItem.astro";
         style="background-image: url('/public/projects/secundaria.webp')"
     >
     </div>
-    <p
-      slot="content"
-      class="max-w-xl text-base md:text-lg"
-    />
   </BentoItem>
 </section>
