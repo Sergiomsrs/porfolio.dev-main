@@ -15,5 +15,14 @@ const { title, description, link, github, image } = Astro.props
         <p class="text-lg mb-4 text-pretty">{description}</p>
         <ul class="flex gap-x-2 flex-row mb-2">
         </ul>
+        {
+image &&
+          <img
+          loading="lazy"
+          class="rounded shadow-2xl shadow-white/10 aspect-video"
+          src={image}
+          alt={`Captura de pantalla del proyecto ${image}`}
+          />
+        }
       </article>
 </section>
