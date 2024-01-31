@@ -1,0 +1,110 @@
+---
+import BentoItemTraining from "./BentoItemTraining.astro";
+---
+
+<section
+  class={`
+    w-full max-w-[1400px]
+    grid lg:grid-cols-6 auto-rows-[30rem] gap-4
+    mx-auto 
+    mb-10
+  `}
+>
+  <BentoItemTraining 
+  class="col-span-6 lg:col-span-4" 
+  title="Dinamic React Form"
+  subSubtitle="Diseñado para elaborar planes de entrenamiento y nutricion estructurados en bloques"
+  >
+
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-purple-950 bg-opacity-90
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+        style="background-image: url('/public/projects/apptraining/fondo.webp')"
+        >
+    </div>
+
+  </BentoItemTraining>
+  <BentoItemTraining
+    class="col-span-6 lg:col-span-2"
+    title="Elabora tus sesiones"
+    subtitle="Añade tantos bloques e items como quieras"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/public/projects/apptraining/useresylogin.webp')"
+    >
+    </div>
+
+  </BentoItemTraining>
+  <BentoItemTraining
+    class="col-span-6 lg:col-span-2"
+    title="Creado Desde Cero"
+    subtitle="Con React y Javascript"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+        style="background-image: url('/public/projects/apptraining/crear proceso fondo oscuro.webp')"
+    >
+    </div>
+  </BentoItemTraining>
+  <BentoItemTraining class="col-span-6 lg:col-span-2" title="Estructura JSON" subtitle="Data Analytics">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+        style="background-image: url('/public/projects/apptraining/general2.webp')"
+    >
+    </div>
+  </BentoItemTraining>
+  <BentoItemTraining
+  class="col-span-6 lg:col-span-2"
+  title="Creado Desde Cero"
+  subtitle="Con React y Javascript"
+>
+  <div
+    slot="image"
+    class="background transition-scale absolute bottom-0 left-0 top-0
+      -z-10 h-full w-full
+      bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/public/projects/apptraining/data.webp')"
+  >
+  </div>
+</BentoItemTraining>
+<BentoItemTraining
+class="col-span-6 lg:col-span-2"
+title="Creado Desde Cero"
+subtitle="Con React y Javascript"
+>
+<div
+slot="image"
+class="background transition-scale absolute bottom-0 left-0 top-0
+-z-10 h-full w-full
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+style="background-image: url('/public/projects/apptraining/buscador.webp')"
+>
+</div>
+</BentoItemTraining>
+<BentoItemTraining
+class="col-span-6 lg:col-span-4"
+title="Creado Desde Cero"
+subtitle="Con React y Javascript"
+>
+<div
+  slot="image"
+  class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+    style="background-image: url('/public/projects/apptraining/fondo.webp')"
+>
+</div>
+</BentoItemTraining>
+</section>
