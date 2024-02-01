@@ -1,5 +1,7 @@
 ---
+import Projects from "@/components/Projects.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
+import SocialPillRedirect from "@/components/SocialPillRedirect.astro";
 import Layout from "@/layouts/Layout.astro";
 ---
 
@@ -8,39 +10,109 @@ import Layout from "@/layouts/Layout.astro";
   description="Porfolio de Sergio Mendez"
 >
   <main class="px-4">
-    <SectionContainer id="contacto" class="py-44 pb-32">
+    <SectionContainer class="py-32 pb-8">
       <h1
         class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
-        Proyecto: APP Training <a
-          href="https://www.linkedin.com/in/sergio-mendez-soler-03902aa5/"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-center items-center hover:scale-105 transition"
-        >
-        </a>
+      Proyecto: 
+      <span class="text-yellow-800 dark:text-yellow-200">
+      Training App
+      </span>  
       </h1>
-      <h2
-        class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
-      >
-        <span>En el sector del entrenamiento deportivo existen diversas aplicaciones de gestion de entrenamientos</span>
 
+      <p
+        class="text-lg lg:text-lg text-balance font-semibold max-w-[700px] text-black dark:text-white"
+      > 
+      Proyecto en actual desarrollo que permite la creacion y gestion de entrenamientos. Todo el frontend esta construido en React y Javascript.
+          En cuanto al backend se han desarrollado e integrado dos Api Rest, una para la gestion de usuarios y otra para la gestion de entrenamientos. Ambas estan diseñadas con Spring Boot,
+          implementando MySQL, Spring Security y JWT para la autenticacion de usuarios y Springboot con MongoDB para la gestion de entrenamientos.
+        
+    </p>
+        
+      </SectionContainer >
+      
+      <SectionContainer class="py-8 pb-32">
+      <Projects
+      title="Aplicación Completa de Gestión de Entrenamientos"
+      description="Desde la aplicacion se puede hacer una gestion completa tanto de los entrenamientos como de los usuarios."
+      image="/public/projects/apptraining/general2.webp"
+      />
+      <Projects
+      title="Login de autenticacion mediante JWT"
+      description="El acceso a la aplicacion esta controlado mediante una Api Rest creada con Spring Security y JWT que nos permite el acceso a dos tipos de usuarios diferenciados por el rol administrador."
+      image="/public/projects/apptraining/useresylogin.webp"
+      />
+      <Projects
+      title="Gestion de Usuarios"
+      description="Desde el panel de administracion se pueden gestionar los usuarios de la aplicacion."
+      image="/public/projects/apptraining/formulario usuarios portaltil.webp"
+      />
+      <Projects
+      title="Proceso de elaboración de entrenamientos"
+      description="Se divide la creacion de entrenamientos en tres etapas, creacion mediante formulario, revision general con envio a la base de datos y vista general de entrenamientos registrados."
+      image="/public/projects/apptraining/crear proceso fondo oscuro.webp"
+      />
+      <Projects
+      title="Formulario de creacion de entrenamientos"
+      description="Formulario especificamente diseñado para esta App. Construido en React permite añadir tantos bloques y ejercicios como se deseen. Facilita el posterior analisis de los datos."
+      image="/public/projects/secundaria.webp"
+      />
+      <Projects
+      title="Seccion bucador"
+      description="La app cuenta con una seccion para buscar los entrenamientos mediante palabras clave"
+      image="/public/projects/apptraining/buscador.webp"
+      />
+      <Projects
+      title="Analisis de datos"
+      description="Seccion en desarrollo para analizar los datos de los entrenamientos registrados. Todos los entrenamientos son enviados a una Api Rest que los almacena en una base de datos MongoDB de la que podemos obtener un analisis estadistico de los registros. "
+      image="/public/projects/apptraining/data.webp"
+      />
 
+      <Projects
+      title="Futuras implementaciones"
+      description="La aplicacion esta en constante desarrollo y se iran añadiendo nuevas funcionalidades. Algunas de las proximas implementaciones son:"
+      />
+      
 
-        <span
-          class="text-yellow-800 dark:text-yellow-200"
-        >
-          Desarrollador Frontend con React y Backend con Java y Springboot </span
-        >
-        .<span class="text-red-800 dark:text-red-200">
-          De Murcia, España</span
-        >.
-        <span class="text-sky-800 dark:text-sky-200"
-          >Siempre explorando diferentes tecnologias y lenguajes.</span
-        >
-      </h2>
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+  <table class="w-full text-lg text-left rtl:text-right text-gray-500 dark:text-gray-400">
+   
+      <tbody>
+          <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+              <th scope="row" class="px-6 py-4  text-gray-900 whitespace-nowrap dark:text-white">
+                Asignar entrenamientos a su fecha de ejecucion
+              </th>
+          </tr>
+          <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+              <th scope="row" class="px-6 py-4  text-gray-900 whitespace-nowrap dark:text-white">
+                Asignar entrenamientos a plan de entrenamiento
+              </th>
+          </tr>
+          
+          <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+              <th scope="row" class="px-6 py-4  text-gray-900 whitespace-nowrap dark:text-white">
+                Asignar plan de entrenamiento a usuario
+              </th>
+          <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+              <th scope="row" class="px-6 py-4  text-gray-900 whitespace-nowrap dark:text-white">
+                Implementar vista de entrenamientos asignados a usuario
+              </th>
+          <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+              <th scope="row" class="px-6 py-4  text-gray-900 whitespace-nowrap dark:text-white">
+                Implementar vista de entrenamientos a ejecutar en rango de fechas
+              </th>
+          <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+              <th scope="row" class="px-6 py-4  text-gray-900 whitespace-nowrap dark:text-white">
+                Implementar seccion estadisticas por usuario
+              </th>
+          </tr>
+         
+      </tbody>
+  </table>
+</div>
+<br/>
 
-
+<SocialPillRedirect href="/">Volver</SocialPillRedirect>
     </SectionContainer>
   </main>
 </Layout>
