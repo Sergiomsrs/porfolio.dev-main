@@ -6,6 +6,9 @@ import Funcionalidades from "@/components/icons/Funcionalidades.astro";
 import ReactIcon from "@/components/icons/ReactIcon.astro";
 import InProgress from "@/components/icons/InProgress.astro";
 import Layout from "@/layouts/Layout.astro";
+import Javascript from "@/components/icons/Javascript.astro";
+import JavaIcon from "@/components/icons/JavaIcon.astro";
+import Springboot from "@/components/icons/Springboot.astro";
 ---
 
 <Layout
@@ -15,15 +18,20 @@ import Layout from "@/layouts/Layout.astro";
   <main class="px-4">
     <SectionContainer class="py-32 pb-8">
       <h1
-        class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+        class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-2 lg:pb-4"
       >
         Proyecto:
         <span class="text-yellow-800 dark:text-yellow-200"> Training App</span>
       </h1>
-      <ReactIcon/>
+      <div class="flex flex-row">
+        <ReactIcon class="size-12"/>
+        <Javascript class="size-12"/>
+        <JavaIcon class="size-12"/>
+        <Springboot class="size-12"/>
+      </div>
 
       <p
-        class="text-lg lg:text-lg text-pretty font-semibold max-w-[700px] text-black dark:text-white mb-4"
+        class="text-lg lg:text-lg text-pretty font-semibold max-w-[700px] text-black dark:text-white mb-4 mt-6"
       >
         Proyecto en actual desarrollo que permite la creación y gestión de
         entrenamientos y usuarios.
@@ -36,8 +44,7 @@ import Layout from "@/layouts/Layout.astro";
         >
           React y Javascript</span
         >
-        integrando el desarrollo de dos API Rest, una para la gestión de usuarios
-        y otra para la gestión de entrenamientos.
+        integrando el desarrollo de dos API Rest que gestionan de forma independiente los usuarios y los entrenamientos.
       </p>
       <p
         class="text-lg lg:text-lg text-pretty font-semibold max-w-[700px] text-black dark:text-white"
@@ -73,7 +80,7 @@ import Layout from "@/layouts/Layout.astro";
       />
       <Projects
         title="Inicio de sesión con autenticación mediante JWT"
-        description="El acceso a la aplicación está controlado mediante una API Rest creada con Spring Security y JWT, que permite el acceso a dos tipos de usuarios diferenciados por el rol de administrador."
+        description="El acceso a la aplicación está controlado mediante una API Rest creada con Spring Security y JWT. Sus controladores permiten el acceso a los usuarios y restringen sus posibilidades en función de su rol dentro de la aplicación."
         image="/public/projects/apptraining/useresylogin.webp"
       />
       <Projects
