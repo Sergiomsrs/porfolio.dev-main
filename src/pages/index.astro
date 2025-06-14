@@ -15,6 +15,7 @@ import SocialPillRedirect from "@/components/SocialPillRedirect.astro";
 import Bento from "@/components/Bento.astro";
 import Trayectoria from "@/components/icons/Trayectoria.astro";
 import Grid from "@/components/Grid.astro";
+import Demo from "@/components/icons/Demo.astro";
 ---
 
 <Layout
@@ -89,6 +90,48 @@ import Grid from "@/components/Grid.astro";
         <CodeIcon class="size-7" />
         Proyectos
       </h2>
+      <Projects
+        title="WorkSchedFlow - App de Gestion de Turnos de Trabajo."
+        description="WorkSchedFlow es una prueba de concepto diseñada para facilitar la gestión de turnos de trabajo. Su objetivo principal es cubrir las necesidades de los gestores de equipos, brindando una herramienta que simplifica el diseño de horarios mientras se asegura de cumplir con las normativas laborales y las expectativas de los empleados. La aplicación ofrece una interfaz intuitiva para gestionar los turnos, permitiendo a los responsables asegurar el cumplimiento legislativo y la optimización de los recursos, garantizando al mismo tiempo un equilibrio entre las demandas de la empresa y los derechos de los trabajadores."
+        image="/workschedflow.webp"
+        imageAlt="Captura de pantalla del proyecto TimeTrack App"
+      />
+      <div class="flex gap-4 mt-8 mb-8 flex-wrap justify-center w-full">
+        <SocialPill
+          href="https://sergiomsrs.github.io/workschedflow-demo/#/workschedflow-demo/"
+        >
+          <Demo class="size-4 md:size-6" />
+          Ir a la Demo
+        </SocialPill>
+        <SocialPill
+          href="https://github.com/Sergiomsrs/prueba-concepto-gestorTurnos"
+        >
+          <GitHubIcon class="size-4 md:size-6" />
+          WorkSchedFlow-UI
+        </SocialPill>
+        <SocialPill href="https://github.com/Sergiomsrs/jobhourapp-poc-api">
+          <GitHubIcon class="size-4 md:size-6" />
+          WorkSchedFlow-API
+        </SocialPill>
+      </div>
+      <Projects
+        title="TimeTrack App - Sistema de Gestión de Control Horario Para empleados."
+        description="Aplicación web destinada al control horario de los trabajadores. Esta herramienta permitirá a los empleados registrar sus fichajes de forma sencilla, y ofrecerá a los administradores de la empresa un conjunto de funcionalidades de gestión y supervisión."
+        image="/timeTrack.webp"
+        imageAlt="Captura de pantalla del proyecto TimeTrack App"
+      />
+       <div class="flex gap-4 mt-8 mb-8 flex-wrap justify-center w-full">
+        <SocialPill
+          href="https://github.com/Sergiomsrs/timetrack-ui"
+        >
+          <GitHubIcon class="size-4 md:size-6" />
+          TimeTrackApp-UI
+        </SocialPill>
+        <SocialPill href="https://github.com/Sergiomsrs/timetrack-api">
+          <GitHubIcon class="size-4 md:size-6" />
+          TimeTrackApp-API
+        </SocialPill>
+      </div>
       <Projects
         title="React Component - Formulario dinámico de extensión variable."
         description="Formulario diseñado desde cero con React para la elaboración de planes nutricionales y de entrenamiento. Sigue una estructura de bloques e ítems que se pueden añadir o eliminar a gusto del usuario. Especialmente diseñado para poder implementar el análisis estadístico de los planes elaborados."
