@@ -11,6 +11,7 @@ import ProfileCheck from "@/components/icons/ProfileCheck.astro";
 import Projects from "@/components/Projects.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
 import SocialPill from "@/components/SocialPill.astro";
+import VerDemo from "@/components/VerDemo.astro";
 import SocialPillRedirect from "@/components/SocialPillRedirect.astro";
 import Bento from "@/components/Bento.astro";
 import Trayectoria from "@/components/icons/Trayectoria.astro";
@@ -69,16 +70,6 @@ const base = import.meta.env.BASE_URL;
       </nav>
     </SectionContainer>
 
-    <SectionContainer id="trayectoria">
-      <h2
-        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
-      >
-        <Trayectoria class="size-7" />
-        Mi Trayectoria
-      </h2>
-      <Experience />
-    </SectionContainer>
-
     <SectionContainer id="proyectos">
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
@@ -93,12 +84,12 @@ const base = import.meta.env.BASE_URL;
         imageAlt="Captura de pantalla del proyecto WorkSchedFlow"
       />
       <div class="flex gap-4 mt-8 mb-8 flex-wrap justify-center w-full">
-        <SocialPill
+        <VerDemo
           href="https://sergiomsrs.github.io/workschedflow-demo/#/workschedflow-demo/"
         >
           <Demo class="size-4 md:size-6" />
           Ir a la Demo
-        </SocialPill>
+        </VerDemo>
         <SocialPill
           href="https://github.com/Sergiomsrs/prueba-concepto-gestorTurnos"
         >
@@ -152,6 +143,16 @@ const base = import.meta.env.BASE_URL;
           User-Api
         </SocialPill>
       </div>
+    </SectionContainer>
+
+    <SectionContainer id="trayectoria">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <Trayectoria class="size-7" />
+        Mi Trayectoria
+      </h2>
+      <Experience />
     </SectionContainer>
 
     <SectionContainer id="sobre-mi">
