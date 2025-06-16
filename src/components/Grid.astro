@@ -1,3 +1,7 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+
 <div class=" grid grid-cols-8  gap-4 mb-8 ">
     <!-- Imagen en la esquina superior derecha -->
     <div
@@ -27,7 +31,7 @@
         class="relative col-span-4 rounded-xl overflow-hidden transform transition-all"
     >
         <img
-            src="/useresylogin.webp"
+            src=`${base}useresylogin.webp`
             alt="Imagen 2"
             class="w-full h-full object-cover"
         />
@@ -36,7 +40,7 @@
         class="relative col-span-4 rounded-xl overflow-hidden transform transition-all"
     >
         <img
-            src="/crear proceso fondo oscuro.webp"
+            src=`${base}crear proceso fondo oscuro.webp`
             alt="Imagen 3"
             class="w-full h-full object-cover"
         />
@@ -69,7 +73,7 @@
         class="relative col-span-4 rounded-xl overflow-hidden transform transition-all"
     >
         <img
-            src="/estadisticas.webp"
+            src=`${base}estadisticas.webp`
             alt="Imagen 5"
             class="w-full h-full object-cover"
         />
@@ -79,7 +83,7 @@
     class="relative col-span-4 rounded-xl overflow-hidden transform transition-all "
     >
     <img
-    src="/buscador.webp"
+    src=`${base}buscador.webp`
     alt="Imagen 7"
     class="w-full h-full object-cover"
     />
