@@ -1,7 +1,11 @@
-import { defineConfig } from "astro/config";
+import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  base: "/porfolio.dev-main/",
+  site: 'https://sergiomsrs.github.io',
+  base: '/porfolio.dev-main/',
   integrations: [tailwind()],
+  build: {
+    format: 'directory'
+  }
 });
