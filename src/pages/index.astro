@@ -89,8 +89,8 @@ const base = import.meta.env.BASE_URL;
       <Projects
         title="WorkSchedFlow - App de Gestion de Turnos de Trabajo."
         description="WorkSchedFlow es una prueba de concepto diseñada para facilitar la gestión de turnos de trabajo. Su objetivo principal es cubrir las necesidades de los gestores de equipos, brindando una herramienta que simplifica el diseño de horarios mientras se asegura de cumplir con las normativas laborales y las expectativas de los empleados. La aplicación ofrece una interfaz intuitiva para gestionar los turnos, permitiendo a los responsables asegurar el cumplimiento legislativo y la optimización de los recursos, garantizando al mismo tiempo un equilibrio entre las demandas de la empresa y los derechos de los trabajadores."
-        image="/workschedflow.webp"
-        imageAlt="Captura de pantalla del proyecto TimeTrack App"
+        image=`${base}workschedflow.webp`
+        imageAlt="Captura de pantalla del proyecto WorkSchedFlow"
       />
       <div class="flex gap-4 mt-8 mb-8 flex-wrap justify-center w-full">
         <SocialPill
@@ -152,7 +152,7 @@ const base = import.meta.env.BASE_URL;
           User-Api
         </SocialPill>
       </div>
-      <SocialPillRedirect href="/proyecto">Saber más</SocialPillRedirect>
+      <SocialPillRedirect href=`${base}proyecto`>Saber más</SocialPillRedirect>
     </SectionContainer>
 
     <SectionContainer id="sobre-mi">
