@@ -1,10 +1,7 @@
-import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
-
-const isProd = process.env.NODE_ENV === 'production';
+import { defineConfig } from "astro/config";
+import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: isProd ? 'https://sergiomsrs.github.io/porfolio.dev-main/' : undefined,
-  base: isProd ? '/porfolio.dev-main/' : '/',
+  base: "/porfolio.dev-main/", // 👈 nombre del repo
   integrations: [tailwind()],
 });
