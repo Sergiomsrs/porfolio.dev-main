@@ -35,16 +35,19 @@
   const btn = document.getElementById('menu-btn');
   const menu = document.getElementById('mobile-menu');
   btn.addEventListener('click', () => {
-    // Solo alterna el menú si está en móvil
     if (window.innerWidth < 768) {
       menu.classList.toggle('hidden');
     }
   });
-
-  // Oculta el menú móvil si se cambia a pantalla grande
   window.addEventListener('resize', () => {
     if (window.innerWidth >= 768) {
       menu.classList.add('hidden');
     }
+  });
+  // Cierra el menú móvil al hacer clic en cualquier enlace del menú móvil
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+    });
   });
 </script>
