@@ -1,27 +1,48 @@
-<header class="sticky top-0 z-20 mb-4 w-full bg-white/90 dark:bg-neutral-950/90 backdrop-blur-md border-b border-neutral-100 dark:border-neutral-800 shadow-sm">
-  <div class="w-full max-w-[740px] mx-auto">
-    <nav class="flex justify-between items-center h-16 px-4">
-      {/* Logo o nombre */}
-            <div class="flex flex-col group"> <!-- Contenedor flex-col para alinear verticalmente -->
-        <span class="font-bold text-lg leading-tight tracking-tight text-neutral-900 dark:text-white">
-          Sergio Méndez
-        </span>
-        <span class="text-xs sm:text-sm font-medium text-neutral-500 dark:text-neutral-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
-          Desarrollo de aplicaciones multiplataforma
-        </span>
+
+<nav class="bg-white shadow-md w-full xl:w-[1120px] fixed top-0 left-1/2 -translate-x-1/2 z-50 mb-10 rounded-lg">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between h-16 items-center">
+      <span class="font-bold text-xl text-gray-800">MiPortafolio</span>
+      <!-- Menú para pantallas grandes -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#inicio" class="text-gray-700 hover:text-blue-600">Inicio</a>
+        <a href="#proyectos" class="text-gray-700 hover:text-blue-600">Proyectos</a>
+        <a href="#sobre-mi" class="text-gray-700 hover:text-blue-600">Sobre mí</a>
+        <a href="#contacto" class="text-gray-700 hover:text-blue-600">Contacto</a>
       </div>
-      
-      {/* Menú compacto */}
-      <div class="flex gap-1">
-        {["Proyectos", "Trayectoria", "Sobre mí", "Contacto"].map((item) => (
-          <a
-            href={`#${item.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-")}`}
-            class="relative px-3 py-2 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-all"
-          >
-            {item}
-          </a>
-        ))}
-      </div>
-    </nav>
+      <!-- Botón hamburguesa para móvil -->
+      <button id="menu-btn" class="md:hidden flex items-center" aria-label="Abrir menú">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Menú móvil (oculto por defecto, solo visible en móvil) -->
+    <div id="mobile-menu" class="hidden flex-col space-y-2 pb-4 md:hidden">
+      <a href="#inicio" class="block py-2 text-gray-700 hover:text-blue-600">Inicio</a>
+      <a href="#proyectos" class="block py-2 text-gray-700 hover:text-blue-600">Proyectos</a>
+      <a href="#sobre-mi" class="block py-2 text-gray-700 hover:text-blue-600">Sobre mí</a>
+      <a href="#contacto" class="block py-2 text-gray-700 hover:text-blue-600">Contacto</a>
+    </div>
   </div>
-</header>
+</nav>
+
+<!-- Script para mostrar/ocultar el menú móvil solo en pantallas pequeñas -->
+<script is:inline>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn.addEventListener('click', () => {
+    // Solo alterna el menú si está en móvil
+    if (window.innerWidth < 768) {
+      menu.classList.toggle('hidden');
+    }
+  });
+
+  // Oculta el menú móvil si se cambia a pantalla grande
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      menu.classList.add('hidden');
+    }
+  });
+</script>
